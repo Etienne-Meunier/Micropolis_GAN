@@ -1,5 +1,7 @@
 # Micropolis GAN
 
+Authors : Pierre Moreau and Etienne Meunier
+
 This  project is training a DCGAN [[1]](https://arxiv.org/abs/1511.06434) in order to generate cities for the Micropolis game [[2]]( https://en.wikipedia.org/wiki/SimCity_(1989_video_game)#Micropolis) based on cities created by players. This is an interesting topic because the agencement of the blocks have a lot of constraints to follow to be a valid city. Firstly, at the building level where squared of blocks on the same type to have a proper building, at the local level because the building has to be connected together by a road if they are not directly side by side and finally at the global where there is way more complicated logic to follow. The final goal is to compare this generative network with a genetic algorithm we implemented in that project [[3]](https://github.com/Etienne-Meunier/Micropolis_GA) on Micropolis.
 
 In order to focus uniquely on the structure of the city in a first time we focused on a small set of essential buildings and remove the time factor by creating the city at once at the start of the game and then we measure the evolution of the city later to have metrics. The first goal was mainly to have cities that visually respected the standards to see if the network was able to get the structure properly.
